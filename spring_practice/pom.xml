@@ -16,6 +16,21 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+	
+	<repositories>
+		<repository>
+            <id>project-local-repo</id>
+            <url>file://${project.basedir}/repository</url>
+        </repository>
+		</repositories>
+
+    <pluginRepositories>
+		<pluginRepository>
+            <id>project-local-plugin-repo</id>
+            <url>file://${project.basedir}/repository</url>
+        </pluginRepository>
+	</pluginRepositories>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
